@@ -3,32 +3,28 @@
 <head>
 
   <style>
+    .affiliates-bar {
+      background-color: #f2f2f2;
+      width: 100%;
+      padding: 30px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+    .affiliates-bar img {
+      max-height: 60px;
+      width: auto;
+      object-fit: contain;
+      transition: transform 0.3s ease;
+    }
+    .affiliates-bar img:hover {
+      transform: scale(1.05);
+    }
+  </style>
 
-
-.affiliates-bar {
-  background-color: #f2f2f2;
-  width: 100%;
-  padding: 30px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-  flex-wrap: wrap;
-}
-
-.affiliates-bar img {
-  max-height: 60px;
-  width: auto;
-  object-fit: contain;
-  transition: transform 0.3s ease;
-}
-
-.affiliates-bar img:hover {
-  transform: scale(1.05);
-}
-</style>
   <link rel="icon" type="image/png" href="assets/m.png" sizes="32x32" />
-
   <meta charset="UTF-8" />
   <title>UMWSC | ROSTER</title>
   <link rel="stylesheet" href="styles.css" />
@@ -63,16 +59,17 @@
       <h1 class="subtitle" style="font-weight: 600">PLAYER ROSTER</h1>
       <div style="text-align: center">
         <select id="yearSelect">
-          <option value="2024" selected>2024-2025</option>
-          <option value="2025">2025-2026</option>
-        </select>        
+          <option value="2024">2024-2025</option>
+          <option value="2025" selected>2025-2026</option>
+          <option value="2026">2026-2027</option>
+        </select>
       </div>
     </div>
 
-    
 
     <!-- ROSTER 2024 SECTION -->
     <div id="roster-2024" class="roster-year" style="display: none;">
+
       <!-- Emily Barkes -->
       <div class="player-profile">
         <img src="assets/players/Barkes.jpg" alt="Emily Barkes" class="player-photo">
@@ -82,7 +79,7 @@
         </div>
         <a href="players/barkes.html" class="bio-link">Full Bio</a>
       </div>
-      
+
       <!-- Avary Bourbin -->
       <div class="player-profile">
         <img src="assets/players/Avery.jpg" alt="Avary Bourbin" class="player-photo">
@@ -92,7 +89,7 @@
         </div>
         <a href="players/bourbin.html" class="bio-link">Full Bio</a>
       </div>
-      
+
       <!-- Isabel Bruce -->
       <div class="player-profile">
         <img src="assets/players/Isabel.jpg" alt="Isabel Bruce" class="player-photo">
@@ -102,7 +99,7 @@
         </div>
         <a href="players/bruce.html" class="bio-link">Full Bio</a>
       </div>
-      
+
       <!-- Gillian Ciak -->
       <div class="player-profile">
         <img src="assets/players/G.jpg" alt="Gillian Ciak" class="player-photo">
@@ -112,7 +109,7 @@
         </div>
         <a href="players/ciak.html" class="bio-link">Full Bio</a>
       </div>
-      
+
       <!-- Dana Clafton -->
       <div class="player-profile">
         <img src="assets/players/Dana.jpg" alt="Dana Clafton" class="player-photo">
@@ -122,7 +119,7 @@
         </div>
         <a href="players/clafton.html" class="bio-link">Full Bio</a>
       </div>
-      
+
       <!-- Gina Czochara -->
       <div class="player-profile">
         <img src="assets/players/Gina.jpg" alt="Gina Czochara" class="player-photo">
@@ -132,7 +129,7 @@
         </div>
         <a href="players/czochara.html" class="bio-link">Full Bio</a>
       </div>
-      
+
       <!-- Bella De Melo -->
       <div class="player-profile">
         <img src="assets/players/Bella.jpg" alt="Bella de Melo" class="player-photo">
@@ -142,7 +139,7 @@
         </div>
         <a href="players/demelo.html" class="bio-link">Full Bio</a>
       </div>
-      
+
       <!-- Emily Eitzman -->
       <div class="player-profile">
         <img src="assets/players/Eitz.jpg" alt="Emily Eitzman" class="player-photo">
@@ -152,7 +149,7 @@
         </div>
         <a href="players/eitzman.html" class="bio-link">Full Bio</a>
       </div>
-      
+
       <!-- Brianna Ferguson -->
       <div class="player-profile">
         <img src="assets/players/Bri.jpg" alt="Brianna Ferguson" class="player-photo">
@@ -162,7 +159,7 @@
         </div>
         <a href="players/ferguson.html" class="bio-link">Full Bio</a>
       </div>
-      
+
       <!-- Alex French -->
       <div class="player-profile">
         <img src="assets/players/Alex.jpg" alt="Alex French" class="player-photo">
@@ -172,7 +169,7 @@
         </div>
         <a href="players/french.html" class="bio-link">Full Bio</a>
       </div>
-      
+
       <!-- Ella Fujimore -->
       <div class="player-profile">
         <img src="assets/players/Ella.jpg" alt="Ella Fujimore" class="player-photo">
@@ -182,7 +179,7 @@
         </div>
         <a href="players/fujimore.html" class="bio-link">Full Bio</a>
       </div>
-      
+
       <!-- Anna Hauck -->
       <div class="player-profile">
         <img src="assets/players/Anna.jpg" alt="Anna Hauck" class="player-photo">
@@ -192,7 +189,7 @@
         </div>
         <a href="players/hauck.html" class="bio-link">Full Bio</a>
       </div>
-      
+
       <!-- Laci Jernigan -->
       <div class="player-profile">
         <img src="assets/players/Laci.jpg" alt="Laci Jernigan" class="player-photo">
@@ -202,7 +199,7 @@
         </div>
         <a href="players/jernigan.html" class="bio-link">Full Bio</a>
       </div>
-      
+
       <!-- Jadyn Johnson -->
       <div class="player-profile">
         <img src="assets/players/Jadyn.jpg" alt="Jadyn Johnson" class="player-photo">
@@ -212,7 +209,7 @@
         </div>
         <a href="players/johnson.html" class="bio-link">Full Bio</a>
       </div>
-      
+
       <!-- Malena Johnson -->
       <div class="player-profile">
         <img src="assets/players/Malena.jpg" alt="Malena Johnson" class="player-photo">
@@ -222,7 +219,7 @@
         </div>
         <a href="players/mjohnson.html" class="bio-link">Full Bio</a>
       </div>
-      
+
       <!-- Karissa Kim -->
       <div class="player-profile">
         <img src="assets/players/Kiks.jpg" alt="Karissa Kim" class="player-photo">
@@ -232,7 +229,7 @@
         </div>
         <a href="players/kim.html" class="bio-link">Full Bio</a>
       </div>
-      
+
       <!-- Lara Kok -->
       <div class="player-profile">
         <img src="assets/players/Lara.jpg" alt="Lara Kok" class="player-photo">
@@ -242,7 +239,7 @@
         </div>
         <a href="players/kok.html" class="bio-link">Full Bio</a>
       </div>
-      
+
       <!-- Andrea Kowalski -->
       <div class="player-profile">
         <img src="assets/players/Dre.jpg" alt="Andrea Kowalski" class="player-photo">
@@ -252,7 +249,7 @@
         </div>
         <a href="players/kowalski.html" class="bio-link">Full Bio</a>
       </div>
-      
+
       <!-- Deirdre McElhinney -->
       <div class="player-profile">
         <img src="assets/players/Deirdre.jpg" alt="Deirdre McElhinney" class="player-photo">
@@ -272,7 +269,7 @@
         </div>
         <a href="players/meade.html" class="bio-link">Full Bio</a>
       </div>
-      
+
       <!-- Claire Olges -->
       <div class="player-profile">
         <img src="assets/players/Claire.jpg" alt="Claire Olges" class="player-photo">
@@ -282,7 +279,7 @@
         </div>
         <a href="players/olges.html" class="bio-link">Full Bio</a>
       </div>
-      
+
       <!-- Abby Park -->
       <div class="player-profile">
         <img src="assets/players/Abby.jpg" alt="Abby Park" class="player-photo">
@@ -292,7 +289,7 @@
         </div>
         <a href="players/park.html" class="bio-link">Full Bio</a>
       </div>
-      
+
       <!-- Elizabeth Phillips -->
       <div class="player-profile">
         <img src="assets/players/Marty.jpg" alt="Elizabeth Phillips" class="player-photo">
@@ -302,7 +299,7 @@
         </div>
         <a href="players/phillips.html" class="bio-link">Full Bio</a>
       </div>
-      
+
       <!-- Michelle Pieper -->
       <div class="player-profile">
         <img src="assets/players/Mip.jpg" alt="Michelle Pieper" class="player-photo">
@@ -322,7 +319,7 @@
         </div>
         <a href="players/rogala.html" class="bio-link">Full Bio</a>
       </div>
-      
+
       <!-- Emiko Sano -->
       <div class="player-profile">
         <img src="assets/players/Emi.jpg" alt="Emiko Sano" class="player-photo">
@@ -332,7 +329,7 @@
         </div>
         <a href="players/sano.html" class="bio-link">Full Bio</a>
       </div>
-      
+
       <!-- Rachel Savage -->
       <div class="player-profile">
         <img src="assets/players/Rachel.jpg" alt="Rachel Savage" class="player-photo">
@@ -342,7 +339,7 @@
         </div>
         <a href="players/savage.html" class="bio-link">Full Bio</a>
       </div>
-      
+
       <!-- Casey Vigo -->
       <div class="player-profile">
         <img src="assets/players/Casey.jpg" alt="Casey Vigo" class="player-photo">
@@ -352,7 +349,7 @@
         </div>
         <a href="players/vigo.html" class="bio-link">Full Bio</a>
       </div>
-      
+
       <!-- Eve Waldhauser -->
       <div class="player-profile">
         <img src="assets/players/Eve.jpg" alt="Eve Waldhauser" class="player-photo">
@@ -362,17 +359,17 @@
         </div>
         <a href="players/waldhauser.html" class="bio-link">Full Bio</a>
       </div>
-      
+
       <!-- Brooke Wilkowski -->
       <div class="player-profile">
-        <img src="assets/players/Brooke.jpg" alt="Brook Wilkowski" class="player-photo">
+        <img src="assets/players/Brooke.jpg" alt="Brooke Wilkowski" class="player-photo">
         <div class="player-info">
           <div class="player-name">Brooke Wilkowski<span class="jersey-number">#17</span></div>
           <div class="player-details">Defender • Freshman • Greenwich, CT</div>
         </div>
         <a href="players/wilkowski.html" class="bio-link">Full Bio</a>
       </div>
-      
+
       <!-- Megan Wu -->
       <div class="player-profile">
         <img src="assets/players/Wu.jpg" alt="Megan Wu" class="player-photo">
@@ -383,48 +380,377 @@
         <a href="players/wu.html" class="bio-link">Full Bio</a>
       </div>
 
+      <!-- COACHING STAFF SECTION -->
+      <div id="coaches" style="padding-top: 5vh;">
+        <h1 class="subtitle" style="font-weight: 600; text-align: center;">COACHING STAFF</h1>
 
-          <!-- COACHING STAFF SECTION -->
-<div id="coaches" style="padding-top: 5vh;">
-  <h1 class="subtitle" style="font-weight: 600; text-align: center;">COACHING STAFF</h1>
+        <!-- Head Coach - Mo Hijazi -->
+        <div class="player-profile">
+          <img src="assets/players/Blank.png" alt="Mo Hijazi" class="player-photo">
+          <div class="player-info">
+            <div class="player-name">Mo Hijazi</div>
+            <div class="player-details">Head Coach / Women's Club Soccer</div>
+          </div>
+          <a href="coaches/hijazi.html" class="bio-link">Full Bio</a>
+        </div>
 
-  <!-- Head Coach - Mo Hijazi -->
-  <div class="player-profile">
-    <img src="assets/players/Blank.png" alt="Mo Hijazi" class="player-photo">
-    <div class="player-info">
-      <div class="player-name">Mo Hijazi</div>
-      <div class="player-details">Head Coach / Women's Club Soccer</div>
+        <!-- Assistant Coach - Moe Anani -->
+        <div class="player-profile">
+          <img src="assets/players/Blank.png" alt="Moe Anani" class="player-photo">
+          <div class="player-info">
+            <div class="player-name">Moe Anani</div>
+            <div class="player-details">Assistant Coach / Women's Club Soccer</div>
+          </div>
+          <a href="coaches/anani.html" class="bio-link">Full Bio</a>
+        </div>
+
+        <!-- Assistant Coach - Ahmed Kowbi -->
+        <div class="player-profile">
+          <img src="assets/players/Blank.png" alt="Ahmed Kowbi" class="player-photo">
+          <div class="player-info">
+            <div class="player-name">Ahmed Kowbi</div>
+            <div class="player-details">Assistant Coach / Women's Club Soccer</div>
+          </div>
+          <a href="coaches/kowbi.html" class="bio-link">Full Bio</a>
+        </div>
+      </div>
+
     </div>
-    <a href="coaches/hijazi.html" class="bio-link">Full Bio</a>
-  </div>
-
-  <!-- Assistant Coach - Moe Anani -->
-  <div class="player-profile">
-    <img src="assets/players/Blank.png" alt="Moe Anani" class="player-photo">
-    <div class="player-info">
-      <div class="player-name">Moe Anani</div>
-      <div class="player-details">Assistant Coach / Women's Club Soccer</div>
-    </div>
-    <a href="coaches/anani.html" class="bio-link">Full Bio</a>
-  </div>
-
-  <!-- Assistant Coach - Ahmed Kowbi -->
-  <div class="player-profile">
-    <img src="assets/players/Blank.png" alt="Ahmed Kowbi" class="player-photo">
-    <div class="player-info">
-      <div class="player-name">Ahmed Kowbi</div>
-      <div class="player-details">Assistant Coach / Women's Club Soccer</div>
-    </div>
-    <a href="coaches/kowbi.html" class="bio-link">Full Bio</a>
-  </div>
-</div>
-    </div>
-
-
 
 
     <!-- ROSTER 2025 SECTION -->
     <div id="roster-2025" class="roster-year" style="display: none;">
+
+      <!-- Emily Barkes -->
+      <div class="player-profile">
+        <img src="assets/players25/emily_b_25.jpg" alt="Emily Barkes" class="player-photo">
+        <div class="player-info">
+          <div class="player-name">Emily Barkes<span class="jersey-number">#21</span></div>
+          <div class="player-details">Forward • Graduate • Los Angeles, CA</div>
+        </div>
+        <a href="players/25_26_Barkes.html" class="bio-link">Full Bio</a>
+      </div>
+
+      <!-- Isabel Bruce -->
+      <div class="player-profile">
+        <img src="assets/players25/isabel_25.jpg" alt="Isabel Bruce" class="player-photo">
+        <div class="player-info">
+          <div class="player-name">Isabel Bruce (C)<span class="jersey-number">#5</span></div>
+          <div class="player-details">Defender • Junior • San Diego, CA</div>
+        </div>
+        <a href="players/25_26_Bruce.html" class="bio-link">Full Bio</a>
+      </div>
+
+      <!-- Daniela Burgos -->
+      <div class="player-profile">
+        <img src="assets/players25/daniela_25.jpg" alt="Daniela Burgos" class="player-photo">
+        <div class="player-info">
+          <div class="player-name">Daniela Burgos<span class="jersey-number">#24</span></div>
+          <div class="player-details">Midfielder • Freshman • Puerto Rico</div>
+        </div>
+        <a href="players/25_26_Burgos.html" class="bio-link">Full Bio</a>
+      </div>
+
+      <!-- Gina Czochara -->
+      <div class="player-profile">
+        <img src="assets/players25/gina_25.jpg" alt="Gina Czochara" class="player-photo">
+        <div class="player-info">
+          <div class="player-name">Gina Czochara<span class="jersey-number">#2</span></div>
+          <div class="player-details">Midfielder • Junior • Chicago, IL</div>
+        </div>
+        <a href="players/25_26_Czochara.html" class="bio-link">Full Bio</a>
+      </div>
+
+      <!-- Bella De Melo -->
+      <div class="player-profile">
+        <img src="assets/players25/bella_25.jpg" alt="Bella De Melo" class="player-photo">
+        <div class="player-info">
+          <div class="player-name">Bella De Melo<span class="jersey-number">#12</span></div>
+          <div class="player-details">Midfielder • Senior • Bay Area, CA</div>
+        </div>
+        <a href="players/25_26_DeMelo.html" class="bio-link">Full Bio</a>
+      </div>
+
+      <!-- Emily Eitzman -->
+      <div class="player-profile">
+        <img src="assets/players25/emily_e_25.jpg" alt="Emily Eitzman" class="player-photo">
+        <div class="player-info">
+          <div class="player-name">Emily Eitzman<span class="jersey-number">#6</span></div>
+          <div class="player-details">Forward • Graduate • Saline, MI</div>
+        </div>
+        <a href="players/25_26_Eitzman.html" class="bio-link">Full Bio</a>
+      </div>
+
+      <!-- Brianna Ferguson -->
+      <div class="player-profile">
+        <img src="assets/players25/brianna_25.jpg" alt="Brianna Ferguson" class="player-photo">
+        <div class="player-info">
+          <div class="player-name">Brianna Ferguson<span class="jersey-number">#14</span></div>
+          <div class="player-details">Midfielder • Sophomore • Ann Arbor, MI</div>
+        </div>
+        <a href="players/25_26_Ferguson.html" class="bio-link">Full Bio</a>
+      </div>
+
+      <!-- Anna Hauck -->
+      <div class="player-profile">
+        <img src="assets/players25/anna_25.jpg" alt="Anna Hauck" class="player-photo">
+        <div class="player-info">
+          <div class="player-name">Anna Hauck (C)<span class="jersey-number">#3</span></div>
+          <div class="player-details">Defender • Senior • Pontiac, MI</div>
+        </div>
+        <a href="players/25_26_Hauck.html" class="bio-link">Full Bio</a>
+      </div>
+
+      <!-- Laci Jernigan -->
+      <div class="player-profile">
+        <img src="assets/players25/laci_25.jpg" alt="Laci Jernigan" class="player-photo">
+        <div class="player-info">
+          <div class="player-name">Laci Jernigan<span class="jersey-number">#30</span></div>
+          <div class="player-details">Forward • Sophomore • Dexter, MI</div>
+        </div>
+        <a href="players/25_26_Jernigan.html" class="bio-link">Full Bio</a>
+      </div>
+
+      <!-- Jadyn Johnson -->
+      <div class="player-profile">
+        <img src="assets/players25/jadyn_25.jpg" alt="Jadyn Johnson" class="player-photo">
+        <div class="player-info">
+          <div class="player-name">Jadyn Johnson<span class="jersey-number">#26</span></div>
+          <div class="player-details">Forward • Sophomore • Northville, MI</div>
+        </div>
+        <a href="players/25_26_JadynJohnson.html" class="bio-link">Full Bio</a>
+      </div>
+
+      <!-- Malena Johnson -->
+      <div class="player-profile">
+        <img src="assets/players25/malena_25.jpg" alt="Malena Johnson" class="player-photo">
+        <div class="player-info">
+          <div class="player-name">Malena Johnson<span class="jersey-number">#15</span></div>
+          <div class="player-details">Defender • Sophomore • Washington, DC</div>
+        </div>
+        <a href="players/25_26_MalenaJohnson.html" class="bio-link">Full Bio</a>
+      </div>
+
+      <!-- Lara Kok -->
+      <div class="player-profile">
+        <img src="assets/players25/lara_25.jpg" alt="Lara Kok" class="player-photo">
+        <div class="player-info">
+          <div class="player-name">Lara Kok<span class="jersey-number">#16</span></div>
+          <div class="player-details">Defender • Senior • Saline, MI</div>
+        </div>
+        <a href="players/25_26_Kok.html" class="bio-link">Full Bio</a>
+      </div>
+
+      <!-- Caroline Kopmeyer -->
+      <div class="player-profile">
+        <img src="assets/players25/caroline_25.jpg" alt="Caroline Kopmeyer" class="player-photo">
+        <div class="player-info">
+          <div class="player-name">Caroline Kopmeyer<span class="jersey-number">#28</span></div>
+          <div class="player-details">Midfielder • Freshman • Bloomfield Hills, MI</div>
+        </div>
+        <a href="players/25_26_Kopmeyer.html" class="bio-link">Full Bio</a>
+      </div>
+
+      <!-- Andrea Kowalski -->
+      <div class="player-profile">
+        <img src="assets/players25/andrea_25.jpg" alt="Andrea Kowalski" class="player-photo">
+        <div class="player-info">
+          <div class="player-name">Andrea Kowalski<span class="jersey-number">#11</span></div>
+          <div class="player-details">Midfielder • Graduate • Chelsea, MI</div>
+        </div>
+        <a href="players/25_26_Kowalski.html" class="bio-link">Full Bio</a>
+      </div>
+
+      <!-- Adrianna Lorenz -->
+      <div class="player-profile">
+        <img src="assets/players25/adrianna_25.jpg" alt="Adrianna Lorenz" class="player-photo">
+        <div class="player-info">
+          <div class="player-name">Adrianna Lorenz<span class="jersey-number">#22</span></div>
+          <div class="player-details">Forward • Freshman • Pontiac, MI</div>
+        </div>
+        <a href="players/25_26_Lorenz.html" class="bio-link">Full Bio</a>
+      </div>
+
+      <!-- Deirdre McElhinney -->
+      <div class="player-profile">
+        <img src="assets/players25/deirdre_25.jpg" alt="Deirdre McElhinney" class="player-photo">
+        <div class="player-info">
+          <div class="player-name">Deirdre McElhinney<span class="jersey-number">#32</span></div>
+          <div class="player-details">Midfielder • Junior • Newburyport, MA</div>
+        </div>
+        <a href="players/25_26_McElhinney.html" class="bio-link">Full Bio</a>
+      </div>
+
+      <!-- Josephine Meade -->
+      <div class="player-profile">
+        <img src="assets/players25/josephine_25.jpg" alt="Josephine Meade" class="player-photo">
+        <div class="player-info">
+          <div class="player-name">Josephine Meade<span class="jersey-number">#13</span></div>
+          <div class="player-details">Defender • Junior • Bay Area, CA</div>
+        </div>
+        <a href="players/25_26_Meade.html" class="bio-link">Full Bio</a>
+      </div>
+
+      <!-- Elizabeth Phillips -->
+      <div class="player-profile">
+        <img src="assets/players25/elizabeth_25.jpg" alt="Elizabeth Phillips" class="player-photo">
+        <div class="player-info">
+          <div class="player-name">Elizabeth Phillips<span class="jersey-number">#27</span></div>
+          <div class="player-details">Defender • Junior • Boston, MA</div>
+        </div>
+        <a href="players/25_26_Phillips.html" class="bio-link">Full Bio</a>
+      </div>
+
+      <!-- Michelle Pieper -->
+      <div class="player-profile">
+        <img src="assets/players25/michelle_25.jpg" alt="Michelle Pieper" class="player-photo">
+        <div class="player-info">
+          <div class="player-name">Michelle Pieper<span class="jersey-number">#1</span></div>
+          <div class="player-details">GK • Senior • Bloomfield Hills, MI</div>
+        </div>
+        <a href="players/25_26_Pieper.html" class="bio-link">Full Bio</a>
+      </div>
+
+      <!-- Nadia Salas -->
+      <div class="player-profile">
+        <img src="assets/players25/nadia_25.jpg" alt="Nadia Salas" class="player-photo">
+        <div class="player-info">
+          <div class="player-name">Nadia Salas<span class="jersey-number">#18</span></div>
+          <div class="player-details">Forward • Freshman • Milwaukee, WI</div>
+        </div>
+        <a href="players/25_26_Salas.html" class="bio-link">Full Bio</a>
+      </div>
+
+      <!-- Emiko Sano -->
+      <div class="player-profile">
+        <img src="assets/players25/emiko_25.jpg" alt="Emiko Sano" class="player-photo">
+        <div class="player-info">
+          <div class="player-name">Emiko Sano<span class="jersey-number">#20</span></div>
+          <div class="player-details">Forward • Sophomore • Ann Arbor, MI</div>
+        </div>
+        <a href="players/25_26_Sano.html" class="bio-link">Full Bio</a>
+      </div>
+
+      <!-- Rachel Savage -->
+      <div class="player-profile">
+        <img src="assets/players25/rachel_25.jpg" alt="Rachel Savage" class="player-photo">
+        <div class="player-info">
+          <div class="player-name">Rachel Savage<span class="jersey-number">#7</span></div>
+          <div class="player-details">Midfielder • Junior • DeWitt, MI</div>
+        </div>
+        <a href="players/25_26_Savage.html" class="bio-link">Full Bio</a>
+      </div>
+
+      <!-- Lucy Serlin -->
+      <div class="player-profile">
+        <img src="assets/players25/lucy_25.jpg" alt="Lucy Serlin" class="player-photo">
+        <div class="player-info">
+          <div class="player-name">Lucy Serlin<span class="jersey-number">#25</span></div>
+          <div class="player-details">Defender • Freshman • Ann Arbor, MI</div>
+        </div>
+        <a href="players/25_26_Serlin.html" class="bio-link">Full Bio</a>
+      </div>
+
+      <!-- Addison Smucker -->
+      <div class="player-profile">
+        <img src="assets/players25/addison_25.jpg" alt="Addison Smucker" class="player-photo">
+        <div class="player-info">
+          <div class="player-name">Addison Smucker<span class="jersey-number">#9</span></div>
+          <div class="player-details">Midfielder • Freshman • Portage, MI</div>
+        </div>
+        <a href="players/25_26_Smucker.html" class="bio-link">Full Bio</a>
+      </div>
+
+      <!-- Sienna Snyder -->
+      <div class="player-profile">
+        <img src="assets/players25/sienna_25.jpg" alt="Sienna Snyder" class="player-photo">
+        <div class="player-info">
+          <div class="player-name">Sienna Snyder<span class="jersey-number">#19</span></div>
+          <div class="player-details">Forward • Freshman • Saline, MI</div>
+        </div>
+        <a href="players/25_26_Snyder.html" class="bio-link">Full Bio</a>
+      </div>
+
+      <!-- Casey Vigo -->
+      <div class="player-profile">
+        <img src="assets/players25/casey_25.jpg" alt="Casey Vigo" class="player-photo">
+        <div class="player-info">
+          <div class="player-name">Casey Vigo<span class="jersey-number">#23</span></div>
+          <div class="player-details">Midfielder • Junior • Ann Arbor, MI</div>
+        </div>
+        <a href="players/25_26_Vigo.html" class="bio-link">Full Bio</a>
+      </div>
+
+      <!-- Eve Waldhauser -->
+      <div class="player-profile">
+        <img src="assets/players25/eve_25.jpg" alt="Eve Waldhauser" class="player-photo">
+        <div class="player-info">
+          <div class="player-name">Eve Waldhauser<span class="jersey-number">#0</span></div>
+          <div class="player-details">GK • Graduate • Long Island, NY</div>
+        </div>
+        <a href="players/25_26_Waldhauser.html" class="bio-link">Full Bio</a>
+      </div>
+
+      <!-- Brooke Wilkowski -->
+      <div class="player-profile">
+        <img src="assets/players25/brooke_25.jpg" alt="Brooke Wilkowski" class="player-photo">
+        <div class="player-info">
+          <div class="player-name">Brooke Wilkowski<span class="jersey-number">#17</span></div>
+          <div class="player-details">Defender • Sophomore • Greenwich, CT</div>
+        </div>
+        <a href="players/25_26_Wilkowski.html" class="bio-link">Full Bio</a>
+      </div>
+
+      <!-- Megan Wu -->
+      <div class="player-profile">
+        <img src="assets/players25/megan_25.jpg" alt="Megan Wu" class="player-photo">
+        <div class="player-info">
+          <div class="player-name">Megan Wu<span class="jersey-number">#10</span></div>
+          <div class="player-details">Midfielder • Senior • Plymouth, MI</div>
+        </div>
+        <a href="players/25_26_Wu.html" class="bio-link">Full Bio</a>
+      </div>
+
+      <!-- COACHING STAFF SECTION -->
+      <div id="coaches-2025" style="padding-top: 5vh;">
+        <h1 class="subtitle" style="font-weight: 600; text-align: center;">COACHING STAFF</h1>
+
+        <!-- Head Coach - Mo Hijazi -->
+        <div class="player-profile">
+          <img src="assets/players/Blank.png" alt="Mo Hijazi" class="player-photo">
+          <div class="player-info">
+            <div class="player-name">Mo Hijazi</div>
+            <div class="player-details">Head Coach / Women's Club Soccer</div>
+          </div>
+          <a href="coaches/hijazi.html" class="bio-link">Full Bio</a>
+        </div>
+
+        <!-- Assistant Coach - Moe Anani -->
+        <div class="player-profile">
+          <img src="assets/players/Blank.png" alt="Moe Anani" class="player-photo">
+          <div class="player-info">
+            <div class="player-name">Moe Anani</div>
+            <div class="player-details">Assistant Coach / Women's Club Soccer</div>
+          </div>
+          <a href="coaches/anani.html" class="bio-link">Full Bio</a>
+        </div>
+
+        <!-- Assistant Coach - Ahmed Kowbi -->
+        <div class="player-profile">
+          <img src="assets/players/Blank.png" alt="Ahmed Kowbi" class="player-photo">
+          <div class="player-info">
+            <div class="player-name">Ahmed Kowbi</div>
+            <div class="player-details">Assistant Coach / Women's Club Soccer</div>
+          </div>
+          <a href="coaches/kowbi.html" class="bio-link">Full Bio</a>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- ROSTER 2026 SECTION -->
+    <div id="roster-2026" class="roster-year" style="display: none;">
       <h1 class="placeholder">COMING SOON</h1>
     </div>
 
@@ -435,11 +761,10 @@
       <img src="assets/uofm.png" alt="University of Michigan Logo">
       <img src="assets/wmasc.png" alt="WMASC Logo">
     </div>
-    
 
     <!-- FOOTER -->
     <footer>
-      <a style="padding-right: 3px">&copy; 2025 University of Michigan Women's Soccer Club</a>
+      <a style="padding-right: 3px">&copy; 2026 University of Michigan Women's Soccer Club</a>
       <a href="https://www.instagram.com/umwsc/" target="_blank">
         <i class="fab fa-instagram" style="color: #00274c"></i>
       </a>
@@ -450,36 +775,27 @@
   <!-- JavaScript logic -->
   <script src="actions.js"></script>
   <script>
-    // Handle year selection
     const yearSelect = document.getElementById('yearSelect');
     const roster2024 = document.getElementById('roster-2024');
     const roster2025 = document.getElementById('roster-2025');
+    const roster2026 = document.getElementById('roster-2026');
 
     yearSelect.addEventListener('change', function() {
       const year = this.value;
       sessionStorage.setItem('selectedRosterYear', year);
-      
-      if (year === '2024') {
-        roster2024.style.display = 'block';
-        roster2025.style.display = 'none';
-      } else {
-        roster2024.style.display = 'none';
-        roster2025.style.display = 'block';
-      }
+      roster2024.style.display = year === '2024' ? 'block' : 'none';
+      roster2025.style.display = year === '2025' ? 'block' : 'none';
+      roster2026.style.display = year === '2026' ? 'block' : 'none';
     });
 
-    // Set initial state
     const savedYear = sessionStorage.getItem('selectedRosterYear');
     if (savedYear) {
       yearSelect.value = savedYear;
       yearSelect.dispatchEvent(new Event('change'));
-    }
-    // Fallback if no year is saved in session storage
-    if (!savedYear) {
-      yearSelect.value = '2024';
+    } else {
+      yearSelect.value = '2025';
       yearSelect.dispatchEvent(new Event('change'));
     }
-
   </script>
 </body>
 </html>
