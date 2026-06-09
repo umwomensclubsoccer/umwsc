@@ -1,236 +1,329 @@
-@font-face {
-  font-family: 'Squad Sports';
-  src: url('fonts/squad-sports.regular.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-}
+/* --- 1. FONTS & THEME INITIALIZATION --- */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
 
-
-/* Theme Colors */
 :root {
+  /* Official Branding Colors */
   --maize: #ffcb05;
   --blue: #00274c;
   --grey: #e8e8e8;
+  --light-bg: #f9f9f9;
+  --text-dark: #222;
 
+  /* Global Dynamic Mappings */
   --nav-bg: var(--blue);
-  --nav-text: white;
+  --nav-text: #ffffff;
   --nav-hover: var(--maize);
-
   --footer-bg: var(--blue);
   --footer-text: var(--maize);
-
   --accent-bar: var(--maize);
   --placeholder-color: var(--blue);
+
+  /* Clean Font Variables */
+  --font-header: 'Oswald', sans-serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
 }
 
+/* --- 2. GLOBAL RESET & BASE LAYOUT --- */
 html, body {
   margin: 0;
   padding: 0;
-  /* cursor: url('assets/soccer.png') 32 32, auto; */
+  box-sizing: border-box;
+  font-family: var(--font-body);
+  background-color: #ffffff;
+  color: var(--text-dark);
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
 }
 
-/* Titles */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* --- 3. TYPOGRAPHY SYSTEM --- */
 .title {
-  color: black;
-  font-family: 'Squad Sports', sans-serif;
-  font-weight: 300;
+  color: var(--blue);
+  font-family: var(--font-header);
+  font-weight: 700;
+  font-size: clamp(3.5rem, 8vw, 5.5rem);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 1.1;
   text-align: center;
-  margin-bottom: 0;
-  font-size: 90px;
+  margin: 0;
 }
 
 .subtitle {
-  color: black;
-  font-family: "Outfit", sans-serif;
-  font-weight: 700;
-  font-size: 40px;
+  color: var(--blue);
+  font-family: var(--font-header);
+  font-weight: 600;
+  font-size: clamp(1.4rem, 3vw, 2.2rem);
+  text-transform: uppercase;
+  letter-spacing: 3px;
   text-align: center;
-  margin-top: 0;
-}
-
-.roster-title {
-  color: black;
-  font-family: "Zilla Slab", serif; 
-  font-weight: 700;
-  font-size: 27px;
-  text-align: center;
-  margin-top: 0;
+  margin-top: 5px;
   margin-bottom: 0;
 }
 
-/* Page Layout */
-.pageContent {
-  /* margin: 1vh 1vw; */
-  background-color: floralwhite; 
+.roster-title {
+  color: var(--blue);
+  font-family: var(--font-header);
+  font-weight: 700;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  margin: 40px 0 20px;
 }
 
-/* Accent Bar */
+.placeholder {
+  font-family: var(--font-header);
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 700; 
+  text-align: center;
+  margin-bottom: 6vh;
+  color: var(--placeholder-color);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* --- 4. NAVIGATION BAR --- */
 .top-accent-bar {
-  /* margin-top: 3vh; */
-  height: 3px;
+  height: 5px;
   background-color: var(--accent-bar); 
   width: 100%;
 }
 
-/* Navigation Bar */
-ul {
+nav {
+  background-color: var(--nav-bg);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+nav ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0;
+  padding: 0 20px;
   margin: 0;
-  background-color: var(--nav-bg);
-  position: relative;
   list-style: none;
+  min-height: 80px;
 }
 
 #logo {
-  position: absolute;
-  left: 0;
-  padding-left: 16px;
+  margin-right: auto;
 }
 
-.nav-links {
-  display: flex;
-  gap: 15px;
+#logo a {
+  padding: 0;
 }
 
-li {
-  list-style: none;
+#logo a::after {
+  display: none !important;
 }
 
-li a {
+nav li a {
   display: block;
   color: var(--nav-text);
   text-align: center;
-  padding: 25px 16px;
+  padding: 28px 18px;
   text-decoration: none;
-  font-family: "Outfit", sans-serif;
-  font-size: 23px;
-  font-weight: 450;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+  position: relative;
 }
 
-li a:hover {
+nav li a:hover {
   color: var(--nav-hover);
 }
 
-li a:hover:not(:has(img)) {
-  border-bottom: 2px solid var(--nav-hover);
+nav li a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 3px;
+  background-color: var(--nav-hover);
+  transition: width 0.3s ease, left 0.3s ease;
 }
 
-li a.active:not([href="#home"]) {
-  color: var(--nav-hover);
+nav li a:hover::after,
+nav li a.active::after {
+  width: 100%;
+  left: 0;
 }
 
-/* Footer */
-footer {
-  text-align: center;
-  font-family: "Outfit", sans-serif;
-  font-size: 15px;
-  font-weight: 100;
-  padding: 6px 0;
-  background-color: var(--footer-bg);
-  color: var(--footer-text);
-}
-
-/* Dropdown Menu */
-select {
-  font-family: "Outfit", sans-serif;
-  font-size: 16px;
-  margin: 7px;
-  padding: 8px 4vw;
-  border-radius: 7px;
-  transition: color 0.2s ease, font-weight 0.2s ease;
-}
-
-/* Placeholder Text */
-.placeholder {
-  font-family: "Outfit", sans-serif;
-  font-size: 60px;
-  font-weight: 701; 
-  text-align: center;
-  margin-bottom: 6vh;
-  color: var(--placeholder-color);
-}
-
-/* Team Photo */
+/* --- 5. MEDIA & PHOTOS --- */
 #teamPhoto {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5vh;
+  padding: 6vh 20px;
 }
 
 #teamPhoto img {
-  width: 50%;
-  max-width: 1000px;
-  /* border-radius: 16px; */
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 950px;
+  border-radius: 12px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
+#teamPhoto img:hover {
+  transform: scale(1.01);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* --- 6. ROSTER & PLAYER PROFILES --- */
 .player-profile {
   display: flex;
   align-items: center;
-  margin: 20px 0;
-  gap: 15px;
-  margin-bottom: 40px;
-  margin-left: 6vw; 
-  margin-right: 7vw; 
+  background: var(--light-bg);
+  padding: 15px 25px;
+  margin: 15px auto;
+  max-width: 1100px;
+  width: 90%;
+  border-radius: 12px;
+  border-left: 4px solid var(--blue);
+  gap: 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.player-profile:hover {
+  transform: translateX(5px);
+  background: #ffffff;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  border-left-color: var(--maize);
 }
 
 .player-photo {
-  width: 90px;
-  height: 90px;
+  width: 75px;
+  height: 75px;
   border-radius: 50%;
   object-fit: cover;
-  image-rendering: auto;
-  border: 2px solid #00274c; /* Optional: blue border */
+  border: 3px solid var(--blue);
+  flex-shrink: 0;
 }
 
 .player-info {
-  font-family: "Outfit", sans-serif;
+  font-family: var(--font-body);
   display: flex;
   flex-direction: column;
-  margin-right: 20px;
+  flex-grow: 1;
+}
+
+.player-meta-row {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 4px;
 }
 
 .player-name {
-  font-family: "Outfit", sans-serif;
-  font-weight: bold;
-  font-size: 1.2em;
-  color: #00274c; /* Michigan blue-ish */
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--blue);
 }
 
 .jersey-number {
-  font-family: "Outfit", sans-serif;
-  font-weight: normal;
-  color: #333;
-  margin-left: 8px;
+  font-family: var(--font-header);
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--maize);
+  background-color: var(--blue);
+  padding: 1px 8px;
+  border-radius: 4px;
+  letter-spacing: 0.5px;
 }
 
 .player-details {
-  font-family: "Outfit", sans-serif;
-  font-size: 0.95em;
+  font-size: 0.95rem;
   color: #555;
-}
-
-.player-info {
-  flex-grow: 1;
-  margin-right: 80px; /* Added to create space before bio link */
+  font-weight: 500;
 }
 
 .bio-link {
-  font-family: "Outfit", sans-serif;
-  min-width: 70px; 
-  text-decoration: underline;
-  color: #00274c;
-  font-weight: 500;
-  white-space: nowrap;
-  margin-left: 20px; 
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  color: var(--blue);
+  border-bottom: 2px solid transparent;
+  padding-bottom: 2px;
+  transition: color 0.2s ease, border-color 0.2s ease;
 }
+
 .bio-link:hover {
-  color: #ffcb05;
+  color: var(--maize);
+  border-color: var(--maize);
+}
+
+/* --- 7. CONTROLS & INTERACTIVE INTERFACE --- */
+select {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--blue);
+  margin: 15px auto;
+  display: block;
+  padding: 10px 24px;
+  border: 2px solid var(--blue);
+  border-radius: 6px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+select:hover {
+  background-color: var(--blue);
+  color: #fff;
+}
+
+/* --- 8. GLOBAL FOOTER --- */
+footer {
+  text-align: center;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding: 20px 0;
+  background-color: var(--footer-bg);
+  color: var(--footer-text);
+}
+
+/* --- 9. MOBILE RESPONSIVENESS OVERRIDES --- */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    padding: 15px;
+    gap: 15px;
+  }
+  #logo {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10px;
+  }
+  nav li a {
+    padding: 10px;
+  }
+  .player-profile {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+  .player-meta-row {
+    justify-content: center;
+  }
+  .bio-link {
+    margin-left: 0;
+    margin-top: 10px;
+  }
 }
