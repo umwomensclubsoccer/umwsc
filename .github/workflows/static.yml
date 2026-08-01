@@ -1,11 +1,11 @@
 # Simple workflow for deploying static content to GitHub Pages
 name: Deploy static content to Pages
 
+# DISABLED: the site is deployed by Vercel, which builds on every push to main.
+# The automatic push trigger was removed so Pages and Vercel don't both publish
+# the site to two different URLs. This workflow can still be run by hand from
+# the Actions tab if you ever need the Pages copy back.
 on:
-  # Runs on pushes targeting the default branch
-  push:
-    branches: ["main"]
-
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 

@@ -1,233 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" type="image/png" href="assets/m.png" sizes="32x32" />
-
-  <meta charset="UTF-8" />
-  <title>UMWSC | Schedule</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-  <style>
-
-
-    .affiliates-bar {
-      background-color: #f2f2f2;
-      width: 100%;
-      padding: 30px 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 40px;
-      flex-wrap: wrap;
-    }
-    
-    .affiliates-bar img {
-      max-height: 60px;
-      width: auto;
-      object-fit: contain;
-      transition: transform 0.3s ease;
-    }
-    
-    .affiliates-bar img:hover {
-      transform: scale(1.05);
-    }
-    </style>
-  
-  <style>
-    body {
-      font-family: 'Outfit', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f9f9f9;
-      color: #00274c;
-    }
-
-    #pageContent {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    h1 {
-      font-family: "Outfit", sans-serif;
-      text-align: center;
-      font-weight: 700;
-      font-size: 2.5rem;
-      margin-bottom: 20px;
-    }
-
-    table {
-      font-family: "Outfit", sans-serif;
-      width: 100%;
-      border-collapse: collapse;
-      margin-bottom: 40px;
-      background-color: white;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
-
-    th, td {
-      padding: 14px;
-      text-align: center;
-      border: 1px solid #ccc;
-    }
-
-    th {
-      background-color: #00274c;
-      color: white;
-      font-weight: 600;
-    }
-
-    tr:nth-child(even) {
-      background-color: #f2f2f2;
-    }
-
-    #tournaments {
-      background-color: #00274c;
-      color: white;
-      padding: 30px;
-      text-align: center;
-      border-radius: 10px;
-      font-size: 1.2rem;
-      font-weight: 700;
-      line-height: 1.6;
-    }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>UMWSC | Schedule</title>
+<link rel="icon" type="image/png" href="assets/m.png" sizes="32x32" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<link rel="stylesheet" href="umwsc.css" />
 </head>
-
 <body>
-
-    <div class="top-accent-bar"></div>
-    <ul>
-      <li id="logo">
-        <a href="index.html">
-          <img src="assets/michigan.png" alt="Michigan M" style="height: 24px; vertical-align: middle" />
-        </a>
-      </li>
-      <li class="nav-link"><a href="index.html">HOME</a></li>
-      <li class="nav-link"><a href="roster.html">ROSTER</a></li>
-      <li class="nav-link"><a class="active" href="schedule.html">SCHEDULE</a></li>
-      <li class="nav-link"><a href="tryouts.html">TRYOUTS</a></li>
-      <li class="nav-link"><a href="contact.html">CONTACT</a></li>
-      <li class="nav-link"><a href="donate.html">DONATE</a></li>
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="logo" href="index.html"><img src="assets/michigan.png" alt="Michigan M" /></a>
+    <ul class="links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="roster.html">Roster</a></li>
+      <li><a class="active" href="schedule.html">Schedule</a></li>
+      <li><a href="tryouts.html">Tryouts</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="donate.html">Donate</a></li>
     </ul>
-  <div id="pageContent">
-
-        <!--NAVIGATION BAR--> 
-
-
-<!-- SCHEDULE CONTENT -->
-<h1 id="scheduleTitle">2025-2026 SEASON SCHEDULE</h1>
-<table id="scheduleTable">
-  <thead>
-    <tr>
-      <th>Date</th>
-      <th>Time</th>
-      <th>Opponent</th>
-      <th>Home/Away</th>
-      <th>Location</th>
-      <th>Result</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Sept 5</td>
-      <td>7:00 PM</td>
-      <td>Toledo</td>
-      <td>Home</td>
-      <td>Ann Arbor, MI</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>TBD</td>
-      <td>1:00 PM</td>
-      <td>Western Michigan</td>
-      <td>Away</td>
-      <td>Kalamazoo, MI</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>Sept 20</td>
-      <td>1:00 PM</td>
-      <td>GVSU</td>
-      <td>Home</td>
-      <td>Ann Arbor, MI</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>Sept 21</td>
-      <td>12:00 PM</td>
-      <td>Bowling Green</td>
-      <td>Away</td>
-      <td>Bowling Green, OH</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>Sept 26</td>
-      <td>TBD</td>
-      <td>Central Michigan</td>
-      <td>Away</td>
-      <td>East Lansing, MI</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>Sept 28</td>
-      <td>1:00 PM</td>
-      <td>Ohio State</td>
-      <td>Away</td>
-      <td>Toledo, OH</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>Oct 3</td>
-      <td>7:00 PM</td>
-      <td>Michigan State</td>
-      <td>Away</td>
-      <td>East Lansing, MI</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>Oct 5</td>
-      <td>1:00 PM</td>
-      <td>Notre Dame</td>
-      <td>Home</td>
-      <td>Ann Arbor, MI</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>Oct 17</td>
-      <td>7:30 PM</td>
-      <td>Hillsdale</td>
-      <td>Home</td>
-      <td>Ann Arbor, MI</td>
-      <td>-</td>
-    </tr>
-  </tbody>
-</table>
-
-
-  <!-- TOURNAMENT SECTION -->
-  <div id="tournaments" style="background-color: #00274c; color: white; font-weight: 700; padding: 30px 20px; text-align: center; font-size: 1.3rem; border-radius: 10px; max-width: 800px; margin: 60px auto; font-family: 'Outfit', sans-serif;">
-    <span style="color: #FFCB05;">REGIONAL TOURNAMENT:</span> Oct 25–25 in Schaumburg, IL <br />
-    <span style="color: #FFCB05;">NATIONAL TOURNAMENT:</span> TBD in TBD
+    <button class="burger" aria-label="Menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
   </div>
+</nav>
+<div class="drawer">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="roster.html">Roster</a></li>
+    <li><a class="active" href="schedule.html">Schedule</a></li>
+    <li><a href="tryouts.html">Tryouts</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="donate.html">Donate</a></li>
+  </ul>
+</div>
+<div class="page">
+<header class="page-head">
+  <div class="wrap">
+    <h1>2026&ndash;2027 Season Schedule</h1>
+    
   </div>
+</header>
 
-      <!-- AFFILIATES SECTION -->
-      <div class="affiliates-bar">
-        <img src="assets/nirsa.png" alt="NIRSA Logo">
-        <img src="assets/uofm.png" alt="University of Michigan Logo">
-        <img src="assets/wmasc.png" alt="WMASC Logo">
-      </div>
-      
-  
-      <!-- FOOTER -->
-      <footer>
-        <a style="padding-right: 3px">&copy; 2025 University of Michigan Women's Soccer Club</a>
-        <a href="https://www.instagram.com/umwsc/" target="_blank">
-          <i class="fab fa-instagram" style="color: #00274c"></i>
-        </a>
-      </footer>
+<section class="section">
+  <div class="wrap">
+    <div class="table-scroll">
+      <table class="data">
+        <thead>
+          <tr><th>Date</th><th>Day</th><th>Time</th><th>Opponent</th><th>Location</th></tr>
+        </thead>
+        <tbody>
+      <tr>
+        <td>Sept 11</td><td>Friday</td><td>8:00 pm</td><td>Bowling Green</td>
+        <td class="home">Home</td>
+      </tr>
+      <tr>
+        <td>Sept 18</td><td>Friday</td><td>7:00 pm</td><td>Toledo</td>
+        <td class="">Away</td>
+      </tr>
+      <tr>
+        <td>Sept 20</td><td>Sunday</td><td>1:00 pm</td><td>Hillsdale</td>
+        <td class="">Away</td>
+      </tr>
+      <tr>
+        <td>Sept 25</td><td>Friday</td><td>7:00 pm</td><td>Central Michigan</td>
+        <td class="home">Home</td>
+      </tr>
+      <tr>
+        <td>Sept 27</td><td>Sunday</td><td>1:00 pm</td><td>Notre Dame</td>
+        <td class="">Away</td>
+      </tr>
+      <tr>
+        <td>Oct 2</td><td>Friday</td><td>7:00 pm</td><td>Michigan State</td>
+        <td class="home">Home</td>
+      </tr>
+      <tr>
+        <td>Oct 4</td><td>Sunday</td><td>12:00 pm</td><td>Valparaiso</td>
+        <td class="home">Home</td>
+      </tr>
+      <tr>
+        <td>Oct 9</td><td>Friday</td><td>7:00 pm</td><td>Western Michigan</td>
+        <td class="home">Home</td>
+      </tr>
+      <tr>
+        <td>Oct 11</td><td>Sunday</td><td>2:30 pm</td><td>Grand Valley State</td>
+        <td class="">Away</td>
+      </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="table-note">**Home field location is Mitchell Field (1900 Fuller Road, Ann Arbor, MI)</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="wrap">
+    <h2 class="section-title">Tournaments</h2>
+    <div class="table-scroll" style="margin-top:26px">
+      <table class="data">
+        <thead>
+          <tr><th>Tournament</th><th>Start</th><th>End</th><th>Location</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Regionals</td><td>Oct 31, 2026</td><td>Nov 1, 2026</td><td class="tbd">TBD</td></tr>
+          <tr><td>Nationals</td><td class="tbd">TBD</td><td class="tbd">TBD</td><td class="tbd">TBD</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+</div>
+
+<section class="affiliates">
+  <div class="wrap">
+    <div class="cell"><img src="assets/nirsa.png" alt="NIRSA Logo" /></div>
+    <div class="cell"><img src="assets/uofm.png" alt="University of Michigan Logo" /></div>
+    <div class="cell"><img src="assets/wmasc.png" alt="WMASC Logo" /></div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <p>&copy; 2026 University of Michigan Women's Soccer Club</p>
+    <a href="https://www.instagram.com/umwsc/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+  </div>
+</footer>
+
+<script src="umwsc.js"></script>
 </body>
 </html>

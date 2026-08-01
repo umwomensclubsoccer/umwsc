@@ -1,173 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="icon" type="image/png" href="assets/m.png" sizes="32x32" />
-    <style>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>UMWSC | Donate</title>
+<link rel="icon" type="image/png" href="assets/m.png" sizes="32x32" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<link rel="stylesheet" href="umwsc.css" />
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="logo" href="index.html"><img src="assets/michigan.png" alt="Michigan M" /></a>
+    <ul class="links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="roster.html">Roster</a></li>
+      <li><a href="schedule.html">Schedule</a></li>
+      <li><a href="tryouts.html">Tryouts</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a class="active" href="donate.html">Donate</a></li>
+    </ul>
+    <button class="burger" aria-label="Menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+  </div>
+</nav>
+<div class="drawer">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="roster.html">Roster</a></li>
+    <li><a href="schedule.html">Schedule</a></li>
+    <li><a href="tryouts.html">Tryouts</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a class="active" href="donate.html">Donate</a></li>
+  </ul>
+</div>
+<div class="page">
+<header class="page-head">
+  <div class="wrap">
+    <h1>Support UMWSC</h1>
+    
+  </div>
+</header>
 
+<section class="section">
+  <div class="wrap"><div class="prose">
+    <p class="lede">Thank you for considering a donation to the University of Michigan Women's Soccer Club!</p>
+    <p>Your gift directly supports our players by funding field rentals, travel, uniforms, and tournament fees. Every contribution&mdash;big or small&mdash;helps us grow as a club and proudly represent Michigan on and off the field.</p>
+    <p style="margin-top:32px">
+      <a class="btn" href="https://giving.umich.edu/basket/fund/313124" target="_blank" rel="noopener">Donate via University of Michigan Giving</a>
+    </p>
+    <p style="margin-top:30px">Questions? Email us at
+      <a class="inline-link" href="mailto:umwsoccerclub@gmail.com">umwsoccerclub@gmail.com</a>
+    </p>
+  </div></div>
+</section>
+</div>
 
-        .affiliates-bar {
-          background-color: #f2f2f2;
-          width: 100%;
-          padding: 30px 0;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          gap: 40px;
-          flex-wrap: wrap;
-        }
-        
-        .affiliates-bar img {
-          max-height: 60px;
-          width: auto;
-          object-fit: contain;
-          transition: transform 0.3s ease;
-        }
-        
-        .affiliates-bar img:hover {
-          transform: scale(1.05);
-        }
-        </style>
+<section class="affiliates">
+  <div class="wrap">
+    <div class="cell"><img src="assets/nirsa.png" alt="NIRSA Logo" /></div>
+    <div class="cell"><img src="assets/uofm.png" alt="University of Michigan Logo" /></div>
+    <div class="cell"><img src="assets/wmasc.png" alt="WMASC Logo" /></div>
+  </div>
+</section>
 
-    <meta charset="UTF-8" />
-    <title>UMWSC | Donate</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script src="script.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-    <style>
+<footer class="site">
+  <div class="wrap">
+    <p>&copy; 2026 University of Michigan Women's Soccer Club</p>
+    <a href="https://www.instagram.com/umwsc/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+  </div>
+</footer>
 
-        .maize-link {
-        color: #FFCB05;
-        font-weight: 600;
-        text-decoration: none;
-        transition: color 0.3s ease;
-        }
-
-        .maize-link:hover {
-        color: #00274C; /* Michigan blue */
-        text-decoration: underline;
-        }
-
-      body {
-        font-family: 'Outfit', sans-serif;
-        background-color: #ffffff;
-        color: #00274c;
-        margin: 0;
-        padding: 0;
-      }
-
-      #donateSection {
-        max-width: 800px;
-        margin: 0 auto 60px auto;
-        padding: 40px;
-        text-align: center;
-      }
-
-      #donateSection h1 {
-        font-size: 2.5rem;
-        font-weight: 700;
-        margin-bottom: 20px;
-      }
-
-      .donate-info {
-        font-size: 1.2rem;
-        line-height: 1.6;
-        margin-bottom: 30px;
-      }
-
-      .donate-button {
-        display: inline-block;
-        background-color: #FFCB05;
-        color: #00274c;
-        font-weight: 700;
-        font-size: 1.1rem;
-        padding: 14px 28px;
-        border-radius: 10px;
-        text-decoration: none;
-        transition: background-color 0.3s ease;
-        margin-bottom: 30px;
-      }
-
-      .donate-button:hover {
-        background-color: #f2b800;
-      }
-
-      footer {
-        text-align: center;
-        padding: 20px;
-        font-size: 0.9rem;
-
-      }
-    </style>
-  </head>
-  <body>
-    <div id="pageContent">
-      <!-- NAVIGATION BAR -->
-      <div class="top-accent-bar"></div>
-      <ul>
-        <li id="logo">
-          <a href="index.html">
-            <img
-              src="assets/michigan.png"
-              alt="Michigan M"
-              style="height: 24px; vertical-align: middle"
-            />
-          </a>
-        </li>
-        <li class="nav-link"><a href="index.html">HOME</a></li>
-        <li class="nav-link"><a href="roster.html">ROSTER</a></li>
-        <li class="nav-link"><a href="schedule.html">SCHEDULE</a></li>
-        <li class="nav-link"><a href="tryouts.html">TRYOUTS</a></li>
-        <li class="nav-link"><a href="contact.html">CONTACT</a></li>
-        <li class="nav-link"><a class="active" href="donate.html">DONATE</a></li>
-      </ul>
-
-      <!-- DONATE SECTION -->
-      <div id="donateSection">
-        <h1>SUPPORT UMWSC</h1>
-
-        <div class="donate-info">
-          Thank you for considering a donation to the University of Michigan Women's Soccer Club!<br /><br />
-          Your gift directly supports our players by funding field rentals, travel, uniforms, and tournament fees. Every contribution—big or small—helps us grow as a club and proudly represent Michigan on and off the field.
-        </div>
-
-        <a
-          href="https://giving.umich.edu/basket/fund/313124"
-          class="donate-button"
-          target="_blank"
-        >
-          Donate via University of Michigan Giving
-        </a>
-
-        <div class="donate-info" style="margin-top: 20px;">
-            Questions? Email us at
-            <a href="mailto:umwsoccerclub@gmail.com" class="maize-link">
-              umwsoccerclub@gmail.com
-            </a>
-          </div>
-          
-          
-      </div>
-
-    <!-- AFFILIATES SECTION -->
-    <div class="affiliates-bar">
-        <img src="assets/nirsa.png" alt="NIRSA Logo">
-        <img src="assets/uofm.png" alt="University of Michigan Logo">
-        <img src="assets/wmasc.png" alt="WMASC Logo">
-      </div>
-      
-  
-      <!-- FOOTER -->
-      <footer>
-        <a style="padding-right: 3px">&copy; 2025 University of Michigan Women's Soccer Club</a>
-        <a href="https://www.instagram.com/umwsc/" target="_blank">
-          <i class="fab fa-instagram" style="color: #00274c"></i>
-        </a>
-      </footer>
-    <script src="actions.js"></script>
-  </body>
+<script src="umwsc.js"></script>
+</body>
 </html>

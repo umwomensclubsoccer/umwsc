@@ -1,214 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="icon" type="image/png" href="assets/m.png" sizes="32x32" />
-
-
-    <meta charset="UTF-8" />
-    <title>UMWSC | Contact</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script src="script.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Zilla+Slab:ital,wght@0,300..700;1,300..700&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      #contactSection {
-        background: linear-gradient(to bottom, #f9f9f9, #eaf1f7);
-
-        max-width: 800px;
-        margin: 60px auto;
-        padding: 40px;
-        background-color: #f5f5f5;
-        border-radius: 10px;
-        text-align: center;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        font-family: 'Outfit', sans-serif;
-      }
-
-      #contactSection h1 {
-        color: #00274c;
-        font-size: 2.3rem;
-        font-weight: 700;
-        margin-bottom: 20px;
-      }
-
-      .captain {
-        font-size: 1.2rem;
-        margin: 10px 0;
-        color: #333;
-        font-weight: 500;
-      }
-
-      form {
-  max-width: 600px;
-  margin: 0 auto;
-  font-family: 'Outfit', sans-serif;
-}
-
-.form-group {
-  margin-bottom: 20px;
-  text-align: left;
-}
-
-label {
-  display: block;
-  margin-bottom: 6px;
-  font-weight: 600;
-  color: #00274c;
-}
-
-input,
-textarea {
-  width: 100%;
-  padding: 12px;
-  border-radius: 8px;
-  border: 1.5px solid #ccc;
-  background-color: #ffffff;
-  font-size: 1rem;
-  font-family: 'Outfit', sans-serif;
-  transition: border 0.2s ease;
-}
-
-input:focus,
-textarea:focus {
-  outline: none;
-  border: 1.5px solid #FFCB05;
-  box-shadow: 0 0 5px rgba(255, 203, 5, 0.3);
-}
-
-button {
-  background-color: #FFCB05;
-  color: #00274c;
-  font-weight: 700;
-  font-size: 1.1rem;
-  border: none;
-  padding: 12px 24px;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-button:hover {
-  background-color: #f2b800;
-}
-
-.captain-link {
-  color: #00274c;
-  text-decoration: none;
-  font-weight: 600;
-  transition: color 0.2s ease;
-}
-
-.captain-link:hover {
-  color: #FFCB05;
-  text-decoration: underline;
-}
-
-
-    </style>
-
-<style>
-
-
-    .affiliates-bar {
-      background-color: #f2f2f2;
-      width: 100%;
-      padding: 30px 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 40px;
-      flex-wrap: wrap;
-    }
-    
-    .affiliates-bar img {
-      max-height: 60px;
-      width: auto;
-      object-fit: contain;
-      transition: transform 0.3s ease;
-    }
-    
-    .affiliates-bar img:hover {
-      transform: scale(1.05);
-    }
-    </style>
-  </head>
-
-  <body>
-    <div id="pageContent">
-      <!-- NAVIGATION BAR -->
-      <div class="top-accent-bar"></div>
-      <ul>
-        <li id="logo">
-          <a href="index.html">
-            <img src="assets/michigan.png" alt="Michigan M" style="height: 24px; vertical-align: middle" />
-          </a>
-        </li>
-        <li class="nav-link"><a href="index.html">HOME</a></li>
-        <li class="nav-link"><a href="roster.html">ROSTER</a></li>
-        <li class="nav-link"><a href="schedule.html">SCHEDULE</a></li>
-        <li class="nav-link"><a href="tryouts.html">TRYOUTS</a></li>
-        <li class="nav-link"><a class="active" href="contact.html">CONTACT</a></li>
-        <li class="nav-link"><a href="donate.html">DONATE</a></li>
-      </ul>
-
-<!-- CONTACT SECTION -->
-<div style="max-width: 800px; margin: 60px auto; text-align: center; font-family: 'Outfit', sans-serif;">
-    <h1 style="color: #00274c; font-size: 2.3rem; font-weight: 700;">CONTACT OUR CAPTAINS</h1>
-  
-    <a href="players/25_26_Bruce.html" class="captain-link">Isabel Bruce</a>&nbsp;|&nbsp;
-    <a href="players/25_26_Savage.html" class="captain-link">Rachel Savage</a>&nbsp;|&nbsp;
-    <a href="players/25_26_Meade.html" class="captain-link">Josephine Meade</a>
-    
-
-  
-    <div id="contactSection">
-        <form action="https://formspree.io/f/mqalpzpn" method="POST" style="margin-top: 30px">
-
-        <div class="form-group">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" required />
-        </div>
-  
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required />
-        </div>
-  
-        <div class="form-group">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
-        </div>
-  
-        <button type="submit">Send Message</button>
-      </form>
-  
-      <p style="margin-top: 20px; font-size: 1rem; color: #555; font-style: italic;">
-        Emails will go directly to our captains — thank you for your message!
-      </p>
-    </div>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>UMWSC | Contact</title>
+<link rel="icon" type="image/png" href="assets/m.png" sizes="32x32" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<link rel="stylesheet" href="umwsc.css" />
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="logo" href="index.html"><img src="assets/michigan.png" alt="Michigan M" /></a>
+    <ul class="links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="roster.html">Roster</a></li>
+      <li><a href="schedule.html">Schedule</a></li>
+      <li><a href="tryouts.html">Tryouts</a></li>
+      <li><a class="active" href="contact.html">Contact</a></li>
+      <li><a href="donate.html">Donate</a></li>
+    </ul>
+    <button class="burger" aria-label="Menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
   </div>
-  
+</nav>
+<div class="drawer">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="roster.html">Roster</a></li>
+    <li><a href="schedule.html">Schedule</a></li>
+    <li><a href="tryouts.html">Tryouts</a></li>
+    <li><a class="active" href="contact.html">Contact</a></li>
+    <li><a href="donate.html">Donate</a></li>
+  </ul>
+</div>
+<div class="page">
+<header class="page-head">
+  <div class="wrap">
+    <h1>Contact Our Captains</h1>
+    
+  </div>
+</header>
 
-    <!-- AFFILIATES SECTION -->
-    <div class="affiliates-bar">
-        <img src="assets/nirsa.png" alt="NIRSA Logo">
-        <img src="assets/uofm.png" alt="University of Michigan Logo">
-        <img src="assets/wmasc.png" alt="WMASC Logo">
-      </div>
-      
-  
-      <!-- FOOTER -->
-      <footer>
-        <a style="padding-right: 3px">&copy; 2025 University of Michigan Women's Soccer Club</a>
-        <a href="https://www.instagram.com/umwsc/" target="_blank">
-          <i class="fab fa-instagram" style="color: #00274c"></i>
-        </a>
-      </footer>
+<section class="section">
+  <div class="wrap">
+    <div class="captains">
+      <a href="players/25_26_Bruce.html">Isabel Bruce</a>
+      <a href="players/25_26_Savage.html">Rachel Savage</a>
+      <a href="players/25_26_Meade.html">Josephine Meade</a>
     </div>
-    <script src="actions.js"></script>
-  </body>
+
+    <form class="form" action="https://formspree.io/f/mqalpzpn" method="POST" style="margin-top:38px">
+      <div class="field">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+      <div class="field">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+      <button class="btn" type="submit">Send Message</button>
+      <p class="form-note">Emails will go directly to our captains &mdash; thank you for your message!</p>
+    </form>
+  </div>
+</section>
+</div>
+
+<section class="affiliates">
+  <div class="wrap">
+    <div class="cell"><img src="assets/nirsa.png" alt="NIRSA Logo" /></div>
+    <div class="cell"><img src="assets/uofm.png" alt="University of Michigan Logo" /></div>
+    <div class="cell"><img src="assets/wmasc.png" alt="WMASC Logo" /></div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <p>&copy; 2026 University of Michigan Women's Soccer Club</p>
+    <a href="https://www.instagram.com/umwsc/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+  </div>
+</footer>
+
+<script src="umwsc.js"></script>
+</body>
 </html>

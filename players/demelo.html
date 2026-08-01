@@ -1,272 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <link rel="icon" type="image/png" href="../assets/m.png" sizes="32x32" />
-
- <meta charset="UTF-8">
- <title>Bella De Melo | UMWSC</title>
- <link rel="stylesheet" href="../styles.css">
- <link rel="preconnect" href="https://fonts.googleapis.com">
- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
- <style>
-   @font-face {
-     font-family: 'Squad Sports';
-     src: url('../fonts/squad-sports.regular.otf') format('opentype');
-     font-weight: normal;
-     font-style: normal;
-   }
-
-   :root {
-     --maize: #ffcb05;
-     --blue: #00274c;
-     --grey: #e8e8e8;
-     --nav-bg: var(--blue);
-     --nav-text: white;
-     --nav-hover: var(--maize);
-     --footer-bg: var(--blue);
-     --footer-text: var(--maize);
-     --accent-bar: var(--maize);
-     --placeholder-color: var(--blue);
-   }
-
-   body {
-     font-family: 'Outfit', sans-serif;
-     margin: 0;
-     padding: 0;
-     background-color: #f8f8f8;
-     color: #333;
-   }
-
-   .top-accent-bar {
-     height: 3px;
-     background-color: var(--accent-bar);
-     width: 100%;
-   }
-
-   ul {
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     padding: 0;
-     margin: 0;
-     background-color: var(--nav-bg);
-     position: relative;
-     list-style: none;
-   }
-
-   #logo {
-     position: absolute;
-     left: 0;
-     padding-left: 16px;
-   }
-
-   li a {
-     display: block;
-     color: var(--nav-text);
-     text-align: center;
-     padding: 25px 16px;
-     text-decoration: none;
-     font-family: "Outfit", sans-serif;
-     font-size: 23px;
-     font-weight: 450;
-     transition: background-color 0.3s ease, color 0.3s ease;
-   }
-
-   li a:hover {
-     color: var(--nav-hover);
-   }
-
-   li a:hover:not(:has(img)) {
-     border-bottom: 2px solid var(--nav-hover);
-   }
-
-   li a.active:not([href="#home"]) {
-     color: var(--nav-hover);
-   }
-
-   .gray-spacing {
-     background-color: var(--grey);
-     height: 30px;
-     width: 100%;
-   }
-
-   .player-header {
-     background-color: var(--blue);
-     padding: 3rem 6vw;
-     display: flex;
-     align-items: center;
-     gap: 3rem;
-     position: relative;
-   }
-
-   .player-header::before {
-     content: "";
-     position: absolute;
-     top: 0;
-     left: 0;
-     right: 0;
-     height: 4px;
-     background-color: var(--maize);
-   }
-
-   .player-photo {
-     width: 200px;
-     height: 200px;
-     object-fit: cover;
-     border: 4px solid var(--maize);
-     border-radius: 8px;
-   }
-
-   .player-title {
-     flex-grow: 1;
-   }
-
-   .jersey-number {
-     font-size: 4rem;
-     font-weight: 800;
-     color: var(--maize);
-     line-height: 1;
-     margin: 0;
-   }
-
-   .player-name {
-     font-size: 2.2rem;
-     font-weight: 700;
-     margin: 10px 0 0;
-     color: white;
-     letter-spacing: 1px;
-   }
-
-   .player-content {
-     padding: 2rem 6vw;
-     margin: 0 auto;
-     background-color: #f2f2f2;
-     border-radius: 8px;
-     box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-   }
-
-   .player-details {
-     display: grid;
-     grid-template-columns: auto 1fr;
-     gap: 1rem;
-     margin: 2rem 0;
-     font-size: 1.1rem;
-   }
-
-   .detail-label {
-     font-weight: 600;
-     color: var(--blue);
-   }
-
-   .back-link {
-     display: inline-block;
-     margin-top: 2rem;
-     color: var(--blue);
-     text-decoration: none;
-     font-weight: 600;
-     font-size: 1.1rem;
-   }
-
-   .back-link:hover {
-     color: var(--maize);
-   }
-
-   footer {
-     text-align: center;
-     font-family: "Outfit", sans-serif;
-     font-size: 15px;
-     font-weight: 100;
-     padding: 6px 0;
-     background-color: var(--footer-bg);
-     color: var(--footer-text);
-   }
-
-   .title {
-     color: black;
-     font-family: 'Squad Sports', sans-serif;
-     font-weight: 300;
-     text-align: center;
-     margin-bottom: 0;
-     font-size: 50px;
-   }
-
-   .subtitle {
-     color: black;
-     font-family: "Outfit", sans-serif;
-     font-weight: 700;
-     font-size: 30px;
-     text-align: center;
-     margin-top: 0;
-   }
-
-   .roster-title {
-     color: black;
-     font-family: "Zilla Slab", serif;
-     font-weight: 700;
-     font-size: 27px;
-     text-align: center;
-     margin-top: 0;
-     margin-bottom: 0;
-   }
- </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Bella De Melo | UMWSC</title>
+<link rel="icon" type="image/png" href="../assets/m.png" sizes="32x32" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<link rel="stylesheet" href="../umwsc.css" />
 </head>
 <body>
- <div class="top-accent-bar"></div>
- <ul>
-   <li id="logo">
-     <a href="../index.html">
-       <img src="../assets/michigan.png" alt="Michigan M" style="height: 24px; vertical-align: middle;">
-     </a>
-   </li>
-   <li class="nav-link"><a href="../index.html">HOME</a></li>
-   <li class="nav-link"><a href="../roster.html" class="active">ROSTER</a></li>
-   <li class="nav-link"><a href="#schedule">SCHEDULE</a></li>
-   <li class="nav-link"><a href="#contact">CONTACT</a></li>
- </ul>
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="logo" href="../index.html"><img src="../assets/michigan.png" alt="Michigan M" /></a>
+    <ul class="links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a class="active" href="../roster.html">Roster</a></li>
+      <li><a href="../schedule.html">Schedule</a></li>
+      <li><a href="../tryouts.html">Tryouts</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+      <li><a href="../donate.html">Donate</a></li>
+    </ul>
+    <button class="burger" aria-label="Menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+  </div>
+</nav>
+<div class="drawer">
+  <ul>
+    <li><a href="../index.html">Home</a></li>
+    <li><a class="active" href="../roster.html">Roster</a></li>
+    <li><a href="../schedule.html">Schedule</a></li>
+    <li><a href="../tryouts.html">Tryouts</a></li>
+    <li><a href="../contact.html">Contact</a></li>
+    <li><a href="../donate.html">Donate</a></li>
+  </ul>
+</div>
+<div class="page">
+<header class="page-head">
+  <div class="wrap">
+    <h1>BELLA DE MELO</h1>
+    <div class="jersey-lg">#12</div>
+  </div>
+</header>
 
- <div class="gray-spacing"></div>
+<section class="section">
+  <div class="wrap">
+    <div class="bio">
+      <img class="bio-photo" src="../assets/players/Bella.jpg" alt="Bella De Melo" />
+      <div>
+        <dl class="bio-facts">
+          <dt>Position</dt><dd>Midfielder</dd>
+          <dt>Class</dt><dd>Junior</dd>
+          <dt>Hometown</dt><dd>Bay Area, CA</dd>
+          <dt>Major</dt><dd>Economics</dd>
+        </dl>
+      </div>
+    </div>
+    <p class="bio-back"><a class="btn btn--ghost" href="../roster.html" id="backLink">&larr; Back to Roster</a></p>
+  </div>
+</section>
+</div>
 
- <div class="player-header">
-   <img src="../assets/players/Bella.jpg" alt="Bella De Melo" class="player-photo">
-   <div class="player-title">
-     <div class="jersey-number">12</div>
-     <h1 class="player-name">BELLA DE MELO</h1>
-   </div>
- </div>
+<section class="affiliates">
+  <div class="wrap">
+    <div class="cell"><img src="../assets/nirsa.png" alt="NIRSA Logo" /></div>
+    <div class="cell"><img src="../assets/uofm.png" alt="University of Michigan Logo" /></div>
+    <div class="cell"><img src="../assets/wmasc.png" alt="WMASC Logo" /></div>
+  </div>
+</section>
 
- <div class="player-content">
-   <div class="player-details">
-     <span class="detail-label">Position:</span>
-     <span class="detail-value">Midfielder</span>
+<footer class="site">
+  <div class="wrap">
+    <p>&copy; 2026 University of Michigan Women's Soccer Club</p>
+    <a href="https://www.instagram.com/umwsc/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+  </div>
+</footer>
 
-     <span class="detail-label">Class:</span>
-     <span class="detail-value">Junior</span>
-
-     <span class="detail-label">Hometown:</span>
-     <span class="detail-value">Bay Area, CA</span>
-
-     <span class="detail-label">Major:</span>
-     <span class="detail-value">Economics</span>
-   </div>
-
-   <a href="../roster.html" class="back-link" id="backLink">← Back to Roster</a>
- </div>
-
- <footer>
-   <a style="padding-right: 3px">&copy; 2026 University of Michigan Women's Soccer Club</a>
-   <a href="https://www.instagram.com/umwsc/" target="_blank">
-     <i class="fab fa-instagram" style="color: #00274c"></i>
-   </a>
- </footer>
-
- <script>
-   document.addEventListener('DOMContentLoaded', function() {
-     const selectedYear = sessionStorage.getItem('selectedRosterYear') || '2024';
-     const backLink = document.getElementById('backLink');
-     backLink.href = `../roster.html?year=${selectedYear}`;
-     backLink.textContent = `← Back to ${selectedYear}-${parseInt(selectedYear)+1} Roster`;
-   });
- </script>
+<script src="../umwsc.js"></script>
+<script>
+  (function () {
+    var year = '2024';
+    try { year = sessionStorage.getItem('selectedRosterYear') || '2024'; } catch (e) {}
+    var backLink = document.getElementById('backLink');
+    backLink.href = '../roster.html?year=' + year;
+    backLink.textContent = '\u2190 Back to ' + year + '\u2013' + (parseInt(year, 10) + 1) + ' Roster';
+  })();
+</script>
 </body>
 </html>

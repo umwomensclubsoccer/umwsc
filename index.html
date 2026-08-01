@@ -1,397 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-
-    <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-/>
-
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="icon" type="image/png" href="assets/m.png" sizes="32x32" />
-    <meta charset="UTF-8" />
-    <title>UMWSC | Home</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script src="script.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-
-
-.affiliates-bar {
-  background-color: #f2f2f2;
-  width: 100%;
-  padding: 30px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-  flex-wrap: wrap;
-}
-
-.affiliates-bar img {
-  max-height: 60px;
-  width: auto;
-  object-fit: contain;
-  transition: transform 0.3s ease;
-}
-
-.affiliates-bar img:hover {
-  transform: scale(1.05);
-}
-
-      /* .light-banner {
-        background-color: #f2f2f2;
-        width: 100%;
-        padding: 40px 20px;
-        text-align: center;
-        font-size: 1.2rem;
-        font-weight: 500;
-        color: #444;
-        font-family: 'Outfit', sans-serif;
-      } */
-
-      .spirit-line {
-        font-family: 'Outfit', sans-serif;
-        font-size: 2rem;
-        font-weight: 700;
-        color: #00274c;
-        text-align: center;
-        margin: 40px 0 10px;
-      }
-
-      .honors {
-        text-align: center;
-        font-family: 'Outfit', sans-serif;
-        color: #00274c;
-        font-weight: 700;
-        font-size: 1.5rem;
-        margin-bottom: 30px;
-      }
-
-      .honors span {
-        color: #FFCB05;
-      }
-
-      .insta-follow {
-        text-align: center;
-        font-family: 'Outfit', sans-serif;
-        margin-bottom: 60px;
-      }
-
-      .insta-follow a {
-        text-decoration: none;
-        font-weight: 600;
-        font-size: 1.1rem;
-        color: #00274c;
-        margin-left: 8px;
-      }
-
-      /* Smooth animation keyframe */
-    @keyframes fadeInUp {
-      from {
-        transform: translateY(30px);
-        opacity: 0;
-      }
-      to {
-        transform: translateY(0);
-        opacity: 1;
-      }
-    }
-
-      .insta-follow i {
-        color: #1da1f2;
-        font-size: 2rem;
-        vertical-align: middle;
-      }
-
-          /* .spirit-line {
-      margin: 60px 0 20px;
-      font-size: 2rem;
-      font-weight: 800;
-      font-family: 'Outfit', sans-serif;
-      color: #00274c;
-    } */
-
-    .honors {
-      background-color: #f9f9f9;
-      padding: 30px 20px;
-      border-top: 2px solid #FFCB05;
-      border-bottom: 2px solid #00274c;
-      margin-bottom: 40px;
-    }
-
-    /* Refined banner section */
-.light-banner {
-  background: linear-gradient(to right, #f9f9f9, #e5e5e5);
-  width: 100%;
-  padding: 50px 20px;
-  text-align: center;
-  font-size: 1.3rem;
-  font-weight: 500;
-  color: #333;
-  font-family: 'Outfit', sans-serif;
-  box-sizing: border-box;
-}
-
-/* Animated spirit line */
-.spirit-line {
-  font-family: 'Outfit', sans-serif;
-  font-size: 2.2rem;
-  font-weight: 800;
-  color: #00274c;
-  text-align: center;
-  margin: 60px 0 30px;
-  animation: fadeInUp 1s ease-in-out;
-}
-
-.team-image-section {
-  width: 100%;
-  background: linear-gradient(to right, #e9e9e9, #f5f5f5);
-  padding: 50px 20px;
-  display: flex;
-  justify-content: center;
-}
-
-.team-image-wrapper {
-  position: relative;
-  max-width: 900px;
-  width: 90%;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-}
-
-.team-image-wrapper:hover {
-  transform: scale(1.02);
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
-}
-
-.team-photo-dynamic {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.team-caption {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  padding: 12px 20px;
-  background: rgba(0, 39, 76, 0.85);
-  color: #ffcb05;
-  font-size: 1.1rem;
-  font-family: 'Outfit', sans-serif;
-  text-align: center;
-  font-weight: 600;
-  letter-spacing: 1px;
-}
-
-.team-image-wrapper {
-  position: relative;
-  padding: 5px;
-  background: linear-gradient(45deg, #00274c, #ffcb05, #00274c);
-  background-size: 600% 600%;
-  animation: borderPulse 8s ease infinite;
-  border-radius: 18px;
-}
-
-@keyframes borderPulse {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-.about-umwsc-section {
-  background: linear-gradient(to right, #fff, #f8f8f8);
-  padding: 60px 30px;
-  font-family: 'Outfit', sans-serif;
-  color: #00274c;
-  display: flex;
-  justify-content: center;
-}
-
-.about-umwsc-content {
-  max-width: 800px;
-  text-align: left;
-}
-
-.about-umwsc-content h2 {
-  font-size: 2.2rem;
-  font-weight: 800;
-  margin-bottom: 25px;
-  text-align: center;
-  color: #00274c;
-}
-
-.about-umwsc-content p {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  margin-bottom: 20px;
-  color: #333;
-}
-
-.hero-bg-m {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0.2;
-  width: 320px;
-  max-width: 80vw;
-  z-index: 0; /* Behind text */
-  pointer-events: none;
-}
-
-#title h1 {
-  position: relative;
-  z-index: 1; /* Ensures text stays in front */
-}
-
-
-
-
-
-    </style>
-  </head>
-
-  <body>
-    <div id="pageContent">
-      <!--NAVIGATION BAR-->
-      <div class="top-accent-bar"></div>
-      <ul>
-        <li id="logo">
-          <a href="index.html">
-            <img
-              src="assets/michigan.png"
-              alt="Michigan M"
-              style="height: 24px; vertical-align: middle"
-            />
-          </a>
-        </li>
-        <li class="nav-link"><a class="active" href="index.html">HOME</a></li>
-        <li class="nav-link"><a href="roster.html">ROSTER</a></li>
-        <li class="nav-link"><a href="schedule.html">SCHEDULE</a></li>
-        <li class="nav-link"><a href="tryouts.html">TRYOUTS</a></li>
-        <li class="nav-link"><a href="contact.html">CONTACT</a></li>
-        <li class="nav-link"><a href="donate.html">DONATE</a></li>
-      </ul>
-
-      <!--MAIN PAGE TITLE-->
-      <div id="title" style="padding-top: 5vh; padding-bottom: 5vh;" data-aos="fade-up">
-        <img src="assets/michigan.png" alt="Block M" class="hero-bg-m" />
-        
-        <h1 class="title">UNIVERSITY OF MICHIGAN</h1>
-        <h1 class="subtitle">WOMEN'S SOCCER CLUB</h1>
-      </div>
-
-
-
-<!-- LIGHT GRAY BANNER -->
-<div class="light-banner" data-aos="fade-up">
-  A team of highly-skilled players from around the nation, united by our drive to play competitive soccer.
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>UMWSC | Home</title>
+<link rel="icon" type="image/png" href="assets/m.png" sizes="32x32" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<link rel="stylesheet" href="umwsc.css" />
+</head>
+<body>
+<nav class="nav nav--overlay">
+  <div class="nav-inner">
+    <a class="logo" href="index.html"><img src="assets/michigan.png" alt="Michigan M" /></a>
+    <ul class="links">
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="roster.html">Roster</a></li>
+      <li><a href="schedule.html">Schedule</a></li>
+      <li><a href="tryouts.html">Tryouts</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="donate.html">Donate</a></li>
+    </ul>
+    <button class="burger" aria-label="Menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+  </div>
+</nav>
+<div class="drawer">
+  <ul>
+    <li><a class="active" href="index.html">Home</a></li>
+    <li><a href="roster.html">Roster</a></li>
+    <li><a href="schedule.html">Schedule</a></li>
+    <li><a href="tryouts.html">Tryouts</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="donate.html">Donate</a></li>
+  </ul>
 </div>
 
-<!-- SPIRIT LINE -->
-<div class="spirit-line" data-aos="zoom-in">
-  GO BLUE. BEAT OHIO STATE.
-</div>
-
-
-
-<svg viewBox="0 0 1440 150" preserveAspectRatio="none" style="display: block;">
-  <path fill="#FFCB05" fill-opacity="1" d="M0,64L60,58.7C120,53,240,43,360,42.7C480,43,600,53,720,80C840,107,960,149,1080,149.3C1200,149,1320,107,1380,85.3L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
-</svg>
-
-    <!-- ABOUT UMWSC -->
-    <section class="about-umwsc-section" data-aos="fade-up">
-      <div class="about-umwsc-content">
-        <h2>About UMWSC</h2>
-        <p>
-          UMWSC is a student-run organization which provides competitive soccer for women who want to continue playing at the college level without the commitment of being a varsity athlete.
-        </p>
-        <p>
-          The last two years, UMWSC has advanced to the national tournament in Round Rock, Texas, where we played UCLA, Vanderbilt, and Texas this past season.
-        </p>
-        <p>
-          UMWSC competes in the W-MASC Conference in NIRSA's Region 3 with other teams like Michigan State and Grand Valley. During the regional tournament, the team competes against other competitive schools such as University of Wisconsin and Ohio State.
-        </p>
-      </div>
-    </section>
-
-
-<!-- HONORS -->
-<div class="honors" data-aos="fade-up">
-  <div>2024–2025 <span>REGIONAL CHAMPS</span></div>
-  <div>2024–2025 <span>NATIONAL SEMI-FINALISTS</span></div>
-</div>
-
-          <!-- TEAM IMAGE SECTION -->
-          <div class="team-image-section" data-aos="fade-up">
-            <div class="team-image-wrapper">
-              <img src="assets/teamphoto.jpg" alt="UMWSC Team" class="team-photo-dynamic" />
-              <div class="team-caption">
-                2024–2025 Squad
-              </div>
-            </div>
-          </div>
-
-    <!-- INSTAGRAM -->
-    <div class="insta-follow" style="margin-top: 40px; display: flex; justify-content: center; align-items: center; gap: 12px; font-family: 'Outfit', sans-serif;" data-aos="fade-up">
-      <a href="https://www.instagram.com/umwsc/" target="_blank" style="display: flex; align-items: center; text-decoration: none;">
-        <i class="fab fa-instagram" style="color: #00274c; font-size: 2rem;"></i>
-        <span style="margin-left: 10px; font-size: 1rem; font-weight: 600; color: #00274c;">
-          FOLLOW US ON INSTAGRAM: @umwsc
-        </span>
-      </a>
+<header class="hero">
+  <img src="assets/teamphoto.jpg" alt="UMWSC Team" />
+  <div class="scrim"></div>
+  <div class="hero-body">
+    <h1>University of Michigan<span>Women's Soccer Club</span></h1>
+  </div>
+  <div class="hero-foot">
+    <div class="wrap">
+      <p>A team of highly-skilled players from around the nation, united by our drive to play competitive soccer.</p>
+      <span class="credit">2024&ndash;2025 Squad</span>
     </div>
+  </div>
+</header>
 
+<section class="honors">
+  <div class="wrap">
+    <div class="honor"><span class="yr">2024&ndash;2025</span><span class="ttl">Regional Champs</span></div>
+    <div class="honor"><span class="yr">2024&ndash;2025</span><span class="ttl">National Semi-Finalists</span></div>
+  </div>
+</section>
 
+<section class="rally">
+  <div class="wrap"><p>Go Blue. Beat Ohio State.</p></div>
+</section>
 
-
-
-
-
-
-
-    <!-- AFFILIATES SECTION -->
-<div class="affiliates-bar">
-  <img src="assets/nirsa.png" alt="NIRSA Logo">
-  <img src="assets/uofm.png" alt="University of Michigan Logo">
-  <img src="assets/wmasc.png" alt="WMASC Logo">
-</div>
-
-
-
-
-
-
-      <!-- FOOTER -->
-      <footer>
-        <a style="padding-right: 3px"
-          >&copy; 2025 University of Michigan Women's Soccer Club</a
-        >
-        <a href="https://www.instagram.com/umwsc/" target="_blank">
-          <i class="fab fa-instagram" style="color: #00274c"></i>
-        </a>
-      </footer>
+<section class="about">
+  <div class="wrap grid">
+    <h2>About UMWSC</h2>
+    <div class="body">
+      <p>UMWSC is a student-run organization which provides competitive soccer for women who want to continue playing at the college level without the commitment of being a varsity athlete.</p>
+      <p>The last two years, UMWSC has advanced to the national tournament in Round Rock, Texas, where we played UCLA, Vanderbilt, and Texas this past season.</p>
+      <p>UMWSC competes in the W-MASC Conference in NIRSA's Region 3 with other teams like Michigan State and Grand Valley. During the regional tournament, the team competes against other competitive schools such as University of Wisconsin and Ohio State.</p>
     </div>
+  </div>
+</section>
 
-    <script src="actions.js"></script>
+<section class="social">
+  <div class="wrap">
+    <a href="https://www.instagram.com/umwsc/" target="_blank" rel="noopener">
+      <i class="fab fa-instagram"></i> Follow us on Instagram: @umwsc
+    </a>
+  </div>
+</section>
+<section class="affiliates">
+  <div class="wrap">
+    <div class="cell"><img src="assets/nirsa.png" alt="NIRSA Logo" /></div>
+    <div class="cell"><img src="assets/uofm.png" alt="University of Michigan Logo" /></div>
+    <div class="cell"><img src="assets/wmasc.png" alt="WMASC Logo" /></div>
+  </div>
+</section>
 
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        duration: 800,
-        once: true,
-      });
-    </script>
+<footer class="site">
+  <div class="wrap">
+    <p>&copy; 2026 University of Michigan Women's Soccer Club</p>
+    <a href="https://www.instagram.com/umwsc/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+  </div>
+</footer>
 
-  </body>
+<script src="umwsc.js"></script>
+</body>
 </html>
